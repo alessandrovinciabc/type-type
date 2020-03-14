@@ -81,3 +81,95 @@ body{
     height: 3rem;
     width: 4rem;
 }
+
+.container-input{
+    height:calc(100vh - 4rem);
+    width: 100%;
+}
+
+.change-text-form{
+    position: absolute;
+    top: calc(50vh - (60% / 2));
+    left: calc(50vw - (60% / 2));
+    width: 60%;
+    height: 60%;
+    background-color: #414141;
+    border-radius: 5px;
+    display: none;
+}
+
+.change-text-confirm{
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    color: white;
+    background-color: rgb(0,0,0,0);
+    border:none;
+    cursor: pointer;
+}
+
+.change-text-confirm i{
+    color: white;
+    transition: all .1s;
+}
+
+.change-text-confirm i:hover{
+    color: white;
+}
+
+.change-text-confirm:active i{
+    color: green;
+}
+
+.change-text-close{
+    outline: none;
+    background-color: rgb(0,0,0,0);
+    border: none;
+    cursor: pointer;
+}
+
+.change-text-close i{
+    color: white;
+    transition: all .1s;
+}
+
+.change-text-close i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.change-text-close:active i{
+    color: #af0404;
+}
+
+.change-text-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px #494949 solid;
+}
+
+.change-text-middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14rem;
+}
+
+.change-text-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-text-window-title{
+    font-size: 150%;
+    font-weight: 800;
+    padding: 0 0.4rem;
+}
+
+#new-text{
+    resize: none;
+}
