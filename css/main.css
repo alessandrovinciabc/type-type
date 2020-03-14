@@ -15,3 +15,69 @@ body{
     box-sizing: border-box;
 }
 
+.container{
+    background-color: #252525;
+    height: 100vh;
+}
+
+.top-bar{
+    background-color: #303030;
+    padding: 0 1vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.change-text-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 3rem;
+    width: 4rem;
+    margin: 0 1.5rem;
+    outline: none;
+    color: white;
+    background-color: rgb(0,0,0,0);
+    border:none;
+}
+
+.change-text-btn::before{
+    content: "";
+    visibility: hidden;
+    position: absolute;
+    top: calc(5vh - 0.5rem);
+    left: calc(1.5rem + 1vh + 1rem);
+    height: 1rem;
+    width: 2rem;
+    background-color: rgba(172, 172, 172, 0.3);
+    border-radius: 5px;
+    transition: all .1s ease-in-out;
+}
+
+.change-text-btn::after{
+    content:"Change text";
+    display: inline-block;
+    position: absolute;
+    top: 11vh;
+    visibility: hidden;
+    border-radius: 3px;
+    padding: 0.5rem 0.3rem;
+    background-color: rgba(172, 172, 172, 0.3);
+}
+
+.change-text-btn:hover{
+    cursor: pointer;
+}
+
+.change-text-btn:hover:after{
+    visibility: visible;
+}
+
+.change-text-btn:active:before{
+    visibility: visible;
+    top: calc(5vh - 1.5rem);
+    left: calc(1.5rem + 1vh);
+    height: 3rem;
+    width: 4rem;
+}
