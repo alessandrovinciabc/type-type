@@ -11,7 +11,7 @@ let baseInput = document.getElementById("baseText");
 let userInput = document.getElementById("userInput");
 let clickCatcher = document.getElementsByClassName("wpm-click-catcher")[0];
 
-let textToType = "type whatever you want or select \"Change Text\"";
+let textToType = "";
 
 clickCatcher.addEventListener("click", (event)=>{
     userInput.focus();
