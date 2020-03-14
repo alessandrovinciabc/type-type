@@ -22,8 +22,8 @@ body{
 
 .top-bar{
     background-color: #303030;
-    padding: 0 1vh;
-    height: 10vh;
+    padding: 0 0.5rem;
+    height: 4rem;
     display: flex;
     align-items: center;
 }
@@ -46,8 +46,8 @@ body{
     content: "";
     visibility: hidden;
     position: absolute;
-    top: calc(5vh - 0.5rem);
-    left: calc(1.5rem + 1vh + 1rem);
+    top: calc(2rem - 0.5rem);
+    left: calc(1.5rem + 0.5rem + 1rem);
     height: 1rem;
     width: 2rem;
     background-color: rgba(172, 172, 172, 0.3);
@@ -59,7 +59,7 @@ body{
     content:"Change text";
     display: inline-block;
     position: absolute;
-    top: 11vh;
+    top: 4.5rem;
     visibility: hidden;
     border-radius: 3px;
     padding: 0.5rem 0.3rem;
@@ -76,8 +76,8 @@ body{
 
 .change-text-btn:active:before{
     visibility: visible;
-    top: calc(5vh - 1.5rem);
-    left: calc(1.5rem + 1vh);
+    top: calc(2rem - 1.5rem);
+    left: calc(1.5rem + 0.5rem);
     height: 3rem;
     width: 4rem;
 }
